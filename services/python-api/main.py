@@ -7,6 +7,7 @@ def get_users():
     Returns a hardcoded list of user dictionaries.
     In a real app, this would fetch from a database.
     """
+    print("Fetching users from the database...")
     users = [
         {"id": 1, "name": "Alice", "email": "alice@example.com"},
         {"id": 2, "name": "Bob", "email": "bob@example.com"}, 
