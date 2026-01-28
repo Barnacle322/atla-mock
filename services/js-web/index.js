@@ -9,6 +9,7 @@ function fetchDashboardData() {
         { title: "Revenue", value: "$5,000" },
         { title: "New Users", value: "120" },
         { title: "Active Sessions", value: "45" },
+        { title: "Bounce Rate", value: "42%" }
     ];
 }
 
@@ -32,6 +33,8 @@ function renderPage() {
     }
 
     console.log("    </div>");
+    console.log("<footer class='footer'>Copyright 2024</footer>");
+
     console.log("  </body>");
     console.log("<footer class='footer'>Copyright 2024</footer>")
     console.log("</html>");
@@ -39,3 +42,5 @@ function renderPage() {
 
 // Run the render function
 renderPage();
+
+console.log(renderPage)

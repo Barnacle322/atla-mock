@@ -33,5 +33,5 @@ func processTask(id int, name string) {
 	// Simulate a small delay without advanced concurrency
 	time.Sleep(100 * time.Millisecond)
 
-	fmt.Println("  -> Done in 100ms.")
+	fmt.Println("  -> Done in 100ms. Fast Mode")
 }
