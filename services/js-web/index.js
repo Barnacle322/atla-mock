@@ -33,6 +33,7 @@ function renderPage() {
 
     console.log("    </div>");
     console.log("  </body>");
+    console.log("<footer class='footer'>Copyright 2024</footer>")
     console.log("</html>");
 }
 

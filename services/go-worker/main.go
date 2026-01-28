@@ -31,7 +31,7 @@ func processTask(id int, name string) {
 	fmt.Printf("Processing task #%d: %s\n", id+1, name)
 
 	// Simulate a small delay without advanced concurrency
-	time.Sleep(500 * time.Millisecond)
+	time.Sleep(100 * time.Millisecond)
 
-	fmt.Println("  -> Done.")
+	fmt.Println("  -> Done in 100ms.")
 }
