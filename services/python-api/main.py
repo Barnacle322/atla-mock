@@ -27,7 +27,8 @@ def process_request():
     # Print the data in a JSON-like format
     print(f"Found {len(user_list)} users:")
     for user in user_list:
-        print(f"User ID: {user['id']} | Name: {user['name']}")
+        if user["id"] % 2 == 0:
+            print(f"User ID: {user['id']} | Name: {user['name']}")
 
     print("--- End of Request ---")
 
