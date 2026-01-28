@@ -32,9 +32,13 @@ function renderPage() {
     }
 
     console.log("    </div>");
+    console.log("<footer class='footer'>Copyright 2024</footer>");
+
     console.log("  </body>");
     console.log("</html>");
 }
 
 // Run the render function
 renderPage();
+
+console.log(renderPage)
