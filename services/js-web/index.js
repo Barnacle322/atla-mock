@@ -9,6 +9,7 @@ function fetchDashboardData() {
         { title: "Revenue", value: "$5,000" },
         { title: "New Users", value: "120" },
         { title: "Active Sessions", value: "45" },
+        { title: "Bounce Rate", value: "42%" }
     ];
 }
 
