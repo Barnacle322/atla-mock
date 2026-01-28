@@ -8,9 +8,9 @@ def get_users():
     In a real app, this would fetch from a database.
     """
     users = [
-        {"id": 1, "name": "Alice", "email": "alice@example.com"},
-        {"id": 2, "name": "Bob", "email": "bob@example.com"},
-        {"id": 3, "name": "Charlie", "email": "charlie@example.com"},
+        {"id": 1, "name": "Alice", "email": "alice@example.com", "role": "admin"},
+        {"id": 2, "name": "Bob", "email": "bob@example.com", "role": "user"},
+        {"id": 3, "name": "Charlie", "email": "charlie@example.com", "role": "usual"},
     ]
     return users
 
