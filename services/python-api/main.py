@@ -9,10 +9,10 @@ def get_users():
     """
     users = [
         {"id": 1, "name": "Alice", "email": "alice@example.com"},
-        {"id": 2, "name": "Bob", "email": "bob@example.com"},
+        {"id": 2, "name": "Bob", "email": "bob@example.com"}, 
         {"id": 3, "name": "Charlie", "email": "charlie@example.com"},
     ]
-    return users
+    return users 
 
 
 def process_request():
@@ -27,7 +27,10 @@ def process_request():
     # Print the data in a JSON-like format
     print(f"Found {len(user_list)} users:")
     for user in user_list:
-        print(f"User ID: {user['id']} | Name: {user['name']}")
+            if "@" not in user["email"]:
+                print(f"[WARNING] User {user['id']} has an invalid email: {user['email']}")
+            else:
+                print(f"User ID: {user['id']} | Name: {user['name']}")
 
     print("--- End of Request ---")
 
