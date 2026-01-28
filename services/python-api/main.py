@@ -27,7 +27,12 @@ def process_request():
     # Print the data in a JSON-like format
     print(f"Found {len(user_list)} users:")
     for user in user_list:
-        print(f"User ID: {user['id']} | Name: {user['name']}")
+        try:
+            if "@" not in user["email"]:
+                raise ValueError
+            print(f"User ID: {user['id']} | Name: {user['name']}")
+        except ValueError:
+            print(f"[WARNING] User {user['id']} has an invalid email: {user['email']}")
 
     print("--- End of Request ---")
 
